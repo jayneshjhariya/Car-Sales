@@ -1,0 +1,40 @@
+Sales & Revenue Analysis
+
+a. What is the total revenue generated from all car sales?
+   (SUM the Price column)
+
+b. Which car models generated the highest revenue?
+   (GROUP BY Model, SUM Price, ORDER BY revenue DESC)
+
+c. Which car companies sold the most units?
+   (GROUP BY Company, COUNT Car_id)
+
+🧍‍♂️ Customer Insights
+
+a. What is the average annual income of customers by gender?
+   (GROUP BY Gender, AVG Annual_Income)
+
+b. Which customers purchased the most expensive cars?
+   (ORDER BY Price DESC, LIMIT N)
+
+Dealer & Regional Performance
+
+a. Which dealer region had the highest total sales?
+   (GROUP BY Dealer_Region, SUM Price)
+
+b. Which dealer sold the most cars?
+   (GROUP BY Dealer_Name, COUNT Car_id)
+
+Product & Feature Preferences
+
+a. What are the most popular body styles among customers?
+   (GROUP BY Body_Style, COUNT)
+
+b. How does transmission type affect average car price?
+   (GROUP BY Transmission, AVG Price)
+
+Time-Based Insights
+
+a. How have sales trended over time (monthly or yearly)?
+   (GROUP BY month/year extracted from Date, SUM Price or COUNT Car_id)
+
